@@ -23,7 +23,7 @@ Download available in `/assets/resume.pdf`
 
 ## 📬 Contact
 - Email: k.sharmayyz@gmail.com
-- LinkedIn: [https://linkedin.com/in/yourprofile]
+- LinkedIn: keshavsharmayyz4041
 
 ---
 
