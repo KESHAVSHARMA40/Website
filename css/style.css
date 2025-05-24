@@ -234,7 +234,7 @@
     padding: 10px;
     background: #00bcd4;
     border: none;
-    border-radius: 50%;
+    border-radius: 100%;
     color: white;
     font-size: 1.2rem;
     cursor: pointer;
@@ -242,3 +242,87 @@
     z-index: 1000;
   }
   
+
+  /* ----------------------------------------------
+   Banking Page Hero Section
+---------------------------------------------- */
+.banking-hero {
+    background: linear-gradient(to right, #001f3f, #005c99); /* Bank-style blue theme */
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+  }
+  
+  .banking-hero .hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .banking-hero .hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* ----------------------------------------------
+     Content Sections (Skills & Education)
+  ---------------------------------------------- */
+  .content-section {
+    padding: 4rem 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .content-section h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .skills-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skills-list li {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    color: #222;
+  }
+  
+  /* ----------------------------------------------
+     Call to Action (Resume)
+  ---------------------------------------------- */
+  .cta {
+    padding: 3rem 2rem;
+    background-color: #002244;
+    color: white;
+    text-align: center;
+  }
+  
+  .cta .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    background-color: #00bfff;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta .btn:hover {
+    background-color: #009acd;
+  }
+  
+  /* ----------------------------------------------
+     Responsive Adjustments
+  ---------------------------------------------- */
+  @media (max-width: 768px) {
+    .banking-hero .hero-content h2 {
+      font-size: 2rem;
+    }
+  
+    .banking-hero .hero-content p {
+      font-size: 1rem;
+    }
+  }
