@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Your Name</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Reusable Nav -->
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="banking.html">Banking & CSR</a>
+      <a href="security.html">Security</a>
+      <a href="webdev.html">Web Dev</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-page">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p>If you’d like to discuss a role or project, I’d love to hear from you!</p>
+
+        <form
+          action="https://formspree.io/f/mwpojdzy"
+          method="POST"
+          class="contact-form"
+        >
+        <input type="text" name="_gotcha" style="display:none" />
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            rows="6"
+            required
+          ></textarea>
+          <button type="submit" class="btn">Send Message</button>
+          
+        </form>
+      </div>
+    </section>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

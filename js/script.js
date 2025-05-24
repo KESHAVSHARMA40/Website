@@ -52,3 +52,53 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
   
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.querySelector(".contact-form");
+    const container = document.querySelector(".contact-page .container");
+  
+    if (!form) return; // Only run on contact page
+  
+    // Create message element for feedback
+    const messageEl = document.createElement("p");
+    messageEl.style.marginTop = "1rem";
+    messageEl.style.fontWeight = "bold";
+    container.appendChild(messageEl);
+  
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+  
+      // Form data to send
+      const formData = new FormData(form);
+  
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: formData,
+          headers: {
+            Accept: "application/json",
+          },
+        });
+  
+        if (response.ok) {
+          messageEl.style.color = "limegreen";
+          messageEl.textContent = "Thank you! Your message has been sent.";
+          form.reset();
+        } else {
+          const data = await response.json();
+          messageEl.style.color = "tomato";
+          if (data.errors) {
+            messageEl.textContent = data.errors
+              .map((error) => error.message)
+              .join(", ");
+          } else {
+            messageEl.textContent = "Oops! There was a problem submitting your form.";
+          }
+        }
+      } catch (error) {
+        messageEl.style.color = "tomato";
+        messageEl.textContent = "Oops! There was a problem submitting your form.";
+        console.error(error);
+      }
+    });
+  });
+  
