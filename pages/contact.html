@@ -8,14 +8,20 @@
   </head>
   <body>
     <!-- Reusable Nav -->
-    <nav class="nav">
-      <a href="../index.html">Home</a>
-      <a href="banking.html">Banking & CSR</a>
-      <a href="security.html">Security</a>
-      <a href="webdev.html">Web Dev</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-
+   <header class="header">
+    <div class="container">
+      <h1 class="logo">UNIQUESHAV</h1>
+      <!-- Add this inside the .container div in header -->
+      <button class="nav-toggle" id="navToggle">☰</button>
+      <nav class="nav">
+        <a href="../index.html">Home</a>
+        <!-- <a href="pages/banking.html">Banking & CSR</a> -->
+        <a href="pages/security.html">Security</a>
+        <a href="pages/webdev.html">Web Dev</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
     <!-- Contact Section -->
     <section class="contact-page">
       <div class="container">
@@ -41,7 +47,21 @@
         </form>
       </div>
     </section>
+    <section id="contact" class="contact">
+    <div class="container">
+      <h3>Get in Touch</h3>
+      <p>Feel free to reach out via email or LinkedIn.</p>
+      <p>Email: <a href="mailto:k.sharmayyz@gmail.com">k.sharmayyz@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/keshavsharmayyz4041/" target="_blank">keshavsharmayyz4041</a></p>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Uniqueshav Productions. Built with 💻 and ambition.</p>
+    </div>
+  </footer>
     <script src="../js/script.js"></script>
   </body>
 </html>

@@ -5,12 +5,11 @@
     box-sizing: border-box;
   }
   
-  body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-    background-color: #ffffff;
-    color: #1b1f3b; /* dark navy */
-  }
+ body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
   
   /* Container */
   .container {
@@ -22,7 +21,8 @@
   
   /* Header */
   .header {
-    background-color: #1b1f3b;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    background-color: #030e62;
     color: white;
     padding: 1rem 0;
   }
@@ -34,8 +34,10 @@
   }
   
   .logo {
-    font-size: 1.5rem;
-    font-weight: 600;
+   font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   }
   
   .nav a {
@@ -43,10 +45,12 @@
     margin-left: 1.5rem;
     text-decoration: none;
     font-weight: 500;
+    transition: color 0.3s ease;
   }
   
   .nav a:hover {
     text-decoration: underline;
+    color: #ffcc00; 
   }
   
   /* Hero Section */
@@ -509,6 +513,7 @@
   }
   
   .contact-page h2 {
+    color: #ffffff;
     font-size: 2rem;
     margin-bottom: 1rem;
     text-align: center;
