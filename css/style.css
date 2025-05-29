@@ -336,7 +336,8 @@
    Security Page Hero Section
 ---------------------------------------------- */
 .security-hero {
-    background: linear-gradient(to right, #1f1f1f, #444); /* Dark tone for security */
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right, #1f1f1f, #696969); /* Dark tone for security */
     color: #fff;
     padding: 6rem 2rem;
     text-align: center;
