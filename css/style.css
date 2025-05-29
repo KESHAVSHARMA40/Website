@@ -35,7 +35,6 @@
   }
   
   .logo {
-   font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 0.5px;
@@ -81,7 +80,6 @@
   
   .hero p {
     font-size: 1.2rem;
-    color: #333;
     max-width: 600px;
     margin: 0 auto;
   }
@@ -116,7 +114,7 @@
   
   /* Services Section */
   .services {
-    background-color: #f8f9fa;
+    background-color: #e8f8f8;
     padding: 4rem 2rem;
     text-align: center;
   }
