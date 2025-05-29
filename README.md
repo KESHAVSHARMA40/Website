@@ -2,13 +2,11 @@
 
 This is a personal portfolio website showcasing my professional skills in:
 
-- **Banking & Customer Service** (aspiring role)
 - **Security Services** (current role)
 - **Web Development** (self-taught projects)
 
 ## 🌐 Website Structure
 - `index.html`: Homepage
-- `pages/banking.html`: My banking/CSR profile
 - `pages/security.html`: My security experience
 - `pages/webdev.html`: My development portfolio
 
