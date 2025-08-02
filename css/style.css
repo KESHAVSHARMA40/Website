@@ -199,6 +199,8 @@
       flex-direction: column;
       background-color: #1b1f3b;
       padding: 1rem;
+      position: absolute;
+      top: 60px;
     }
   
     .nav a {
@@ -218,6 +220,7 @@
   body.dark-mode {
     background-color: #1b1f3b;
     color: white;
+
   }
   
   body.dark-mode .header,
@@ -257,7 +260,7 @@
     padding: 10px;
     background: #00bcd4;
     border: none;
-    border-radius: 50%;
+    border-radius: 40%;
     color: rgb(0, 0, 0);
     font-size: 1.2rem;
     cursor: pointer;
